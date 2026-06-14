@@ -22,7 +22,7 @@
     align-items: center;
     width: 100%;
     padding: 12px 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(141, 36, 36, 0.95);
     position: relative;
     z-index: 1;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -346,12 +346,11 @@ style="width: 400px ;height: 300px;"
           // No further action, place as last try posX, posY
         }
 
-        el.style.left = `${posX}px`;
+          el.style.left = `${posX}px`;
         el.style.top = `${posY}px`;
 
         placedRects.push({x: posX, y: posY, width: width, height: height});
       });
-      placedRects.push({x: paris.imgCenterX+200, y: paris.imgCenterY+200, width: paris.width+200, height: paris.height+200})
     }
 
     sizeImages().then(sizes => {
